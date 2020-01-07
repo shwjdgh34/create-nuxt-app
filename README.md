@@ -44,3 +44,27 @@ Once the first page is pre-rendered we still have a single page application beca
 This is 'universal' which is SPA + SRR
 
 > [ssr-spa-nuxt](https://medium.com/aha-official/%EC%95%84%ED%95%98-%ED%94%84%EB%A1%A0%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EA%B8%B0-1-spa%EC%99%80-ssr%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EA%B7%B8%EB%A6%AC%EA%B3%A0-nuxt-js-cafdc3ac2053)
+
+### layout
+
+#### 1. style
+
+default.vue 의 style을 default로 하고 users.vue 에 추가적으로 있는 style만 덮어씌운다.
+
+#### 2. usage
+
+사용하고 싶은 layout을 script에 적는다.
+
+```js
+export default {
+  layout: 'users'
+}
+```
+
+> layout/users.vue 를 사용한 경우
+
+layout을 명시하지 않으면 layout/default.vue가 default로 적용된다.
+
+#### 3. inherit
+
+if you applied layout to parent page, it would be inherited to nuxt-childs which are nested routes. This mean that you don't need to add layout on any page of childs
