@@ -68,3 +68,19 @@ layout을 명시하지 않으면 layout/default.vue가 default로 적용된다.
 #### 3. inherit
 
 if you applied layout to parent page, it would be inherited to nuxt-childs which are nested routes. This mean that you don't need to add layout on any page of childs
+
+### Component
+
+#### 1. rule
+
+1. start with capital letter
+2. import and add
+
+```js
+import Header from '@/components/Header'
+export default {
+  components: {
+    Header
+  }
+}
+```
