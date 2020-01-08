@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <ul class="nav-items">
       <li>
         <nuxt-link to="/users">Users</nuxt-link>
@@ -11,13 +11,14 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 .header {
   width: 100%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: grey;
 }
 .nav-items {
   list-style: none;
@@ -26,6 +27,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
 }
 .nav-items a {
   text-decoration: none;
