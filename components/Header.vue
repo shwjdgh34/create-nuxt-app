@@ -11,7 +11,7 @@
   </header>
 </template>
 
-<style scoped>
+<style>
 .header {
   width: 100%;
   height: 60px;
@@ -26,5 +26,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.nav-items a {
+  text-decoration: none;
+  color: black;
+}
+.nav-items a:hover,
+.nav-items a:active {
+  color: blue;
 }
 </style>
