@@ -1,10 +1,5 @@
 <template>
   <div class="container">
-    <ul class="nav-items">
-      <li>
-        <nuxt-link to="/users">Users</nuxt-link>
-      </li>
-    </ul>
     <nuxt-link to="/users">Users</nuxt-link>
   </div>
 </template>
